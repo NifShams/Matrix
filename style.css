@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #002752;
+    color: white;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #ffcc00;
+}
+
+.header-top .black-friday {
+    font-weight: bold;
+}
+
+.header-top .offer span {
+    color: red;
+    font-weight: bold;
+}
+
+.shop-now {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.header-middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #003b75;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.contact {
+    font-size: 14px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header-bottom input {
+    padding: 10px;
+    width: 400px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+}
+
+.main-banner {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+.banner-item {
+    background-color: white;
+    padding: 20px;
+    width: 60%;
+    text-align: left;
+}
+
+.banner-item h2 {
+    color: #003b75;
+}
+
+.banner-item p {
+    color: #666;
+}
+
+.banner-item .shop-btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.banner-item .price {
+    font-size: 24px;
+    color: #ff5722;
+    margin-top: 20px;
+}
+
+.banner-ad {
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.best-deals {
+    padding: 30px;
+    background-color: white;
+}
+
+.best-deals h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.deal-timer {
+    font-size: 14px;
+    color: red;
+}
+
+.deal-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deal-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 22%;
+    text-align: center;
+}
+
+.deal-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.deal-item button {
+    padding: 10px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sold-out {
+    opacity: 0.5;
+}
+
+.categories {
+    padding: 30px;
+    background-color: white;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-item {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+.category-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .main-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-item, .banner-ad {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .deal-items, .category-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .deal-item, .category-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .header-middle, .header-top {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-links a {
+        margin-bottom: 10px;
+    }
+
+    .header-bottom input {
+        width: 80%;
+    }
+}
+
